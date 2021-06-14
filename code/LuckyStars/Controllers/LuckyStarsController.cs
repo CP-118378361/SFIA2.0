@@ -11,9 +11,9 @@ namespace LuckyStars.Controllers
     [Route("[controller]")]
     public class LuckyStarsController : ControllerBase
     {
-        private static readonly int[] LuckyStars = new[]
+        private static readonly int[] Luckystars = new[]
         {
-             10,20,30,40,50,60,70,80,90,100,110,120,130,140,150,160,170,180,190,200
+             0,10,20,30,40,50,60,70,80,90,100,110,120,130,140,150,160,170,180,190,200
         };
 
         [HttpGet]
@@ -21,8 +21,8 @@ namespace LuckyStars.Controllers
         public ActionResult<string> Get()
         {
             var rnd = new Random();
-            var returnIndex = rnd.Next(10, 200);
-            return LuckyStars[returnIndex].ToString();
+            var returnIndex = rnd.Next(0, 20);
+            return Luckystars[returnIndex].ToString();
         }
     }
 }
