@@ -23,11 +23,11 @@ namespace Merge.Controllers
         [HttpGet]
         public async Task<IActionResult> Get()
         {
-            var numbersService = $"{Configuration["numbersServiceURL"]}/Numbers";
+            var numbersService = "https://localhost:44377/numbers";
             var numbersResponseCall = await new HttpClient().GetStringAsync(numbersService);
 
            
-            var luckyStarsService = $"{Configuration["luckyStarsServiceURL"]}/LuckyStars";
+            var luckyStarsService = "https://localhost:44362/luckystars";
             var luckyStarsResponseCall = await new HttpClient().GetStringAsync(luckyStarsService);
 
             var mergedResponse = $"{numbersResponseCall}{luckyStarsResponseCall}";

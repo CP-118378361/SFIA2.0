@@ -153,9 +153,9 @@ sup {
 }
 
 a {
-  color: #007bff;
-  text-decoration: none;
-  background-color: transparent;
+    color: #4cff00;
+    text-decoration: none;
+    background-color: transparent;
 }
 
 a:hover {
@@ -4116,11 +4116,11 @@ input[type="button"].btn-block {
   border-radius: 0.25rem;
 }
 
-.nav-pills .nav-link.active,
-.nav-pills .show > .nav-link {
-  color: #fff;
-  background-color: #007bff;
-}
+    .nav-pills .nav-link.active,
+    .nav-pills .show > .nav-link {
+        color: #4cff00;
+        background-color: #007bff;
+    }
 
 .nav-fill .nav-item {
   -ms-flex: 1 1 auto;

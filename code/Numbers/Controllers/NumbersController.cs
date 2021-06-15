@@ -9,7 +9,7 @@ namespace Numbers.Controllers
 {
     [ApiController]
     [Route("[controller]")]
-    public class WeatherForecastController : ControllerBase
+    public class NumbersController : ControllerBase
     {
         private static readonly int[] Numbers = new[]
         {
