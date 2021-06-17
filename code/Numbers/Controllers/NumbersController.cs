@@ -13,7 +13,7 @@ namespace Numbers.Controllers
     {
         private static readonly int[] Numbers = new[]
         {
-            0,1564,2536,3648,4590,5063
+            1,2,3,4,5,6,7,8,9,10
         };
 
         [HttpGet]
@@ -21,7 +21,7 @@ namespace Numbers.Controllers
         public ActionResult<string> Get()
         {
             var rnd = new Random();
-            var returnIndex = rnd.Next(0, 5);
+            var returnIndex = rnd.Next(0, 9);
             return Numbers[returnIndex].ToString();
         }
         }

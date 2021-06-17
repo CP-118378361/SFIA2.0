@@ -22,7 +22,7 @@ namespace FrontEnd.Controllers
         {
             //var mergedService = "https://localhost:44321/merge";
             var mergedService = $"{Configuration["mergedServiceURL"]}/merge";
-            var serviceThreeResponseCall = await new HttpClient().GetAsync(mergedService);
+            var serviceThreeResponseCall = await new HttpClient().GetStringAsync(mergedService);
             ViewBag.responseCall = serviceThreeResponseCall;
             return View();
         }
