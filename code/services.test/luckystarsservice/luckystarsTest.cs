@@ -9,7 +9,7 @@ using Xunit;
 
 namespace services.test.luckystarsservice
 {
-    public class luckystarsTest
+    public class LuckystarsTest
     {
         [Fact]
         

@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Logging;
+using Microsoft.Extensions.Options;
 
 namespace Merge.Controllers
 {
@@ -13,24 +14,25 @@ namespace Merge.Controllers
     [Route("[controller]")]
     public class MergeController : ControllerBase
     {
+        private AppSettings Configuration;
         //numbersURL ; https://localhost:44377/
         //luckyStarsURL: https://localhost:44362/
-        private IConfiguration Configuration;
-    public MergeController(IConfiguration configuration)
+    public MergeController(IOptions<AppSettings> settings)
         {
-            Configuration = configuration;
+            Configuration = settings.Value;
         }
+
         [HttpGet]
         public async Task<IActionResult> Get()
         {
-            var numbersService = "https://localhost:44377/numbers";
-            var numbersResponseCall = await new HttpClient().GetStringAsync(numbersService);
+            var numbersService = $"{Configuration.NumbersServiceURL}/numbers";
+            var serviceOneResponseCall = await new HttpClient().GetStringAsync(numbersService);
 
            
-            var luckyStarsService = "https://localhost:44362/luckystars";
-            var luckyStarsResponseCall = await new HttpClient().GetStringAsync(luckyStarsService);
+            var luckyStarsService = $"{Configuration.LuckyStarsServiceURL}/luckystars";
+            var serviceTwoResponseCall = await new HttpClient().GetStringAsync(luckyStarsService);
 
-            var mergedResponse = $"{numbersResponseCall}{luckyStarsResponseCall}";
+            var mergedResponse = $"{serviceOneResponseCall}{serviceTwoResponseCall}";
             return Ok(mergedResponse);
         }
     }

@@ -16,9 +16,14 @@ namespace Merge
 {
     public class Startup
     {
-        public Startup(IConfiguration configuration)
+        public Startup(IWebHostEnvironment env)
         {
-            Configuration = configuration;
+            var builder = new ConfigurationBuilder()
+                .SetBasePath(env.ContentRootPath)
+                .AddJsonFile("appsettings.json", optional: true, reloadOnChange: true)
+                .AddJsonFile($"appsettings.{env.EnvironmentName}.json", optional: true);
+                builder.AddEnvironmentVariables();
+            Configuration = builder.Build();
         }
 
         public IConfiguration Configuration { get; }
@@ -27,6 +32,8 @@ namespace Merge
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddRouting(r => r.LowercaseUrls = true);
+            services.AddControllers();
+            services.Configure<AppSettings>(options => Configuration.GetSection("AppSettings").Bind(options));
             services.AddControllers();
             services.AddSwaggerGen(c =>
             {
