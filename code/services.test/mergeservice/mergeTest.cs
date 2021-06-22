@@ -16,7 +16,7 @@ namespace services.test.mergeservice
     {
         private AppSettings appSettings = new AppSettings()
         {
-            NumbersServiceURL = "https://chloe-app-number.azurewebsites.net",
+            NumbersServiceURL = "https://cp-app-numbers.azurewebsites.net",
             LuckyStarsServiceURL = "https://chloe-app-star.azurewebsites.net"
 
         };
