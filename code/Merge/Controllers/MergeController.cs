@@ -32,7 +32,7 @@ namespace Merge.Controllers
             var luckyStarsService = $"{Configuration.LuckyStarsServiceURL}/luckystars";
             var serviceTwoResponseCall = await new HttpClient().GetStringAsync(luckyStarsService);
 
-            var mergedResponse = $"{serviceOneResponseCall}{serviceTwoResponseCall}";
+            var mergedResponse = $"{serviceOneResponseCall} {serviceTwoResponseCall}";
             return Ok(mergedResponse);
         }
     }
