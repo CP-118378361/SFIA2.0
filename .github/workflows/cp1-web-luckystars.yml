@@ -5,11 +5,11 @@ on:
     - master
 env:
   AZURE_WEBAPP_NAME: cp1-web-luckystars
-  AZURE_WEBAPP_PACKAGE_PATH: Numbers/publish
+  AZURE_WEBAPP_PACKAGE_PATH: ./code/LuckyStars/publish
   AZURE_WEBAPP_PUBLISH_PROFILE: ${{ secrets.cp1_web_luckystars_2108 }}
   CONFIGURATION: Release
   DOTNET_CORE_VERSION: 5.0.x
-  WORKING_DIRECTORY: Numbers
+  WORKING_DIRECTORY: ./code/Luckystars
 jobs:
   build-and-deploy:
     runs-on: windows-latest
