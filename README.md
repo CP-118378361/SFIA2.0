@@ -15,7 +15,6 @@ The main purpose of this object is to communicate with object 1 and 2. This is p
 FrontEnd.
 This is the core service and communicates with the 3 other objects.
 ## Architecture
-![SFIA Flow](https://user-images.githubusercontent.com/46994774/123090049-9a232000-d41f-11eb-8667-d3967802f1d0.png)
 ![Screenshot (26)](https://user-images.githubusercontent.com/46994774/123090147-b921b200-d41f-11eb-914e-da55314af31e.png)
 
   * Trello ~ https://trello.com/b/hi9NQoVj
