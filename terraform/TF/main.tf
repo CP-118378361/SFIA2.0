@@ -12,15 +12,15 @@ provider "azurerm" {
 }
 variable "services" {
   default     = {
-    "frontend"  = "cp-web-frontend"
-    "serviceone" ="cp-web-letters"
-    "servicetwo"  ="cp-web-luckystars"
-    "servicethree"  ="cp-web-merge"
+    "frontend"  = "cp1-web-frontend"
+    "serviceone" ="cp1-web-numbers"
+    "servicetwo"  ="cp1-web-luckystars"
+    "servicethree"  ="cp1-web-merge"
   }
 }
 
 resource "azurerm_resource_group" "rg" {
-    name     = "CPSFIA2.1"
+    name     = "CPSFIA2.2"
     location = "uksouth"
     tags = {
       "project" = "true"

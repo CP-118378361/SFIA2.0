@@ -1,0 +1,7 @@
+[
+    {
+        "name": "AppSettings__mergedServiceURL",
+        "value": "https://cp1-merge.azurewebsites.net",
+        "slotSetting": false
+    }
+]
