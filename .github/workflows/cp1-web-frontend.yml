@@ -5,11 +5,11 @@ on:
     - master
 env:
   AZURE_WEBAPP_NAME: cp1-web-frontend
-  AZURE_WEBAPP_PACKAGE_PATH: ./code/index.html/publish
+  AZURE_WEBAPP_PACKAGE_PATH: ./code/FrontEnd/publish
   AZURE_WEBAPP_PUBLISH_PROFILE: ${{ secrets.cp1_web_frontend_b008 }}
   CONFIGURATION: Release
   DOTNET_CORE_VERSION: 5.0.x
-  WORKING_DIRECTORY: ./code/index.html
+  WORKING_DIRECTORY: ./code/FrontEnd
 jobs:
   build-and-deploy:
     runs-on: windows-latest
