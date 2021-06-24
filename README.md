@@ -19,6 +19,13 @@ This is the core service and communicates with the 3 other objects.
 
   * Trello ~ https://trello.com/b/hi9NQoVj/sfia-20
 ![image](https://user-images.githubusercontent.com/46994774/123221312-bb8b1700-d4c6-11eb-902d-c36cb6e1697c.png)
+My Trello board contains the following
+
+Pre-Sprint prep- This involves outline the necessary steps taken before the project began.
+Epics - these relate to the large amounts of work/tasks which can be broken down.
+Product backlog items- are items which can be implement to further improve the application, they are single sources of work which can be completed.
+Tasks- involve work that needs to be done in this project that is the 3 objects and frontend applications.
+User Stories- explains the end goal of people who interact with the application through an informal explanation of the software features.
 
 ## Risk Assessment
 
