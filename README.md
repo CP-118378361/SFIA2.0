@@ -48,7 +48,8 @@ Used to create azure services - resource group + app services
 main.tf created a resource group called CPSFIA2.2 and 4 services on azure.
 ## Known Issues
 Frontend test doesn't pass due to not being able to retrieve a value for numbers.
-Not fully functioning and only redeploying manually after terraform is applied 
+No fully test report carried out
+Not fully functioning and only redeploying manually after terraform is applied main.yml not applied
 
 ## Reflection
-
+Learnt a lot along the way whilst doing the project. Saw how the different areas of training can be implemented into a project. Used lots of new software for the first time and had to adapt and learn more about these softwares during my project.
