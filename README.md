@@ -32,7 +32,7 @@ User Stories- explains the end goal of people who interact with the application 
 
 ## Testing
 ![image](https://user-images.githubusercontent.com/46994774/123221473-e5dcd480-d4c6-11eb-9ec2-f17ae6951c71.png)
-
+Testing allows us to use code that can help us to verify the expected behavior of the other code in the project.
 ## Deployment
 Using CI/CD pipelines and github actions to deploy all services and then use URLs to show they have been deployed manually besides frontend*
 ![image](https://user-images.githubusercontent.com/46994774/123222020-70bdcf00-d4c7-11eb-9c8f-61a242e965f4.png)
