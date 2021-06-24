@@ -52,4 +52,6 @@ No fully test report carried out
 Not fully functioning and only redeploying manually after terraform is applied main.yml not applied
 
 ## Reflection
-Learnt a lot along the way whilst doing the project. Saw how the different areas of training can be implemented into a project. Used lots of new software for the first time and had to adapt and learn more about these softwares during my project.
+ - Learnt a lot along the way whilst doing the project. Saw how the different areas of training can be implemented into a project. 
+ - Used lots of new software for the first time and had to adapt and learn more about these softwares during my project.
+ - Testing is something I need to learn to do properly and hopefully become confident in doing, this was one of main goals for this project after SFIA1 and I think i definetly achieved it in some manner.
