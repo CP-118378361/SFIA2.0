@@ -28,6 +28,7 @@ Tasks- involve work that needs to be done in this project that is the 3 objects 
 User Stories- explains the end goal of people who interact with the application through an informal explanation of the software features.
 
 ## Risk Assessment
+![image](https://user-images.githubusercontent.com/46994774/123231720-5f2cf500-d4d0-11eb-8961-096055f0dd86.png)
 
 ## Testing
 ![image](https://user-images.githubusercontent.com/46994774/123221473-e5dcd480-d4c6-11eb-9ec2-f17ae6951c71.png)
