@@ -31,6 +31,10 @@ Using CI/CD pipelines and github actions to deploy all services and then use URL
 ![image](https://user-images.githubusercontent.com/46994774/123222071-7b786400-d4c7-11eb-9cc4-bfc6e871c7ea.png)
 ![Screenshot (39)](https://user-images.githubusercontent.com/46994774/123222130-88955300-d4c7-11eb-832c-ec23a0aa2e85.png)
 ![Screenshot (40)](https://user-images.githubusercontent.com/46994774/123222161-8fbc6100-d4c7-11eb-85fc-7a7979bc83b7.png)
+http://cp1-web-merge.azurewebsites.net/
+http://cp1-web-numbers.azurewebsites.net/
+http://cp1-web-luckystars.azurewebsites.net/
+http://cp1-web-frontend.azurewebsites.net/
 ## Terraform
 Used to create azure services - resource group + app services
 main.tf created a resource group called CPSFIA2.2 and 4 services on azure.
